@@ -1,10 +1,13 @@
-def func(a, b):
+def func(a, b) -> float:
     try:
-        return (True, a/b)
+        return a/b
     except ZeroDivisionError:
-        return (False, None)
+        raise ValueError('잘못된 입력. 0으로 나눌 수 없음.')
 
 
-success, value = func(5, 0)
-if success:
+try:
+    value = func(5, 0)
+except ValueError as e:
+    print(f'잘못된 입력: {e}')
+else:
     print('do your action.')
