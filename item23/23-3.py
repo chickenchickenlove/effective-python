@@ -1,6 +1,6 @@
-def remainder(number, divisor, hello):
-    print(hello)
-    return number % divisor
+def remainder(**kwargs):
+    for k, v in kwargs.items():
+        print(f'{k = }, {v = }')
 
 
 a = {
@@ -8,7 +8,5 @@ a = {
     'divisor': 20
     }
 
-b = {'hello': 30}
-
-print(remainder(**a, **b))
+print(remainder(hello='a', ballo="b", **a))
 
