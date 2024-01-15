@@ -10,7 +10,6 @@ stock = {
 
 order = ['a', 'b', 'c']
 
-
 # 첫번째 경우는 리스트 컴프리헨션에서 2개의 식으로 더 명확히 표현할 수 있음.
 result = {}
 for name in order:
