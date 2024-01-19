@@ -13,7 +13,12 @@ def index_file(handle):
                 yield offset
 
 
-with open('address.txt', 'r') as f:
-    it = index_file(f)
-    results = itertools.islice(it, 0, 10)
-    print(list(results))
+# with open('address.txt', 'r') as f:
+#     it = index_file(f)
+#     results = itertools.islice(it, 0, 10)
+#     print(list(results))
+
+
+from collections.abc import Iterator
+
+print(isinstance([1,2,3], Iterator))

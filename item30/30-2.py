@@ -19,6 +19,3 @@ print(next(it))
 print(next(it))
 
 # print(result[:-1])
-
-file = open('f', 'w')
-file.truncate()
