@@ -19,7 +19,6 @@ it = my_generator()
 print(next(it))
 print(next(it))
 print(it.throw(MyError("test error")))
-print(next(it))
 
 
 
