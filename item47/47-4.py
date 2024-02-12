@@ -8,7 +8,7 @@ class ValidatingRecord:
         self.exists = 5
 
     def __getattribute__(self, name):
-        print(f'* 호출: __getattr__({name!r})')
+        print(f'* 호출: __getattribute__({name!r})')
         try:
             value = super().__getattribute__(name)
             print(f'* {name!r} 찾음, {value!r} 반환')
