@@ -51,15 +51,7 @@ def trace_func(func):
 
 
 class TraceDict(dict, metaclass=TraceMeta):
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-    def __getitem__(self, *args, **kwargs):
-        return super().__getitem__(*args, **kwargs)
-
-    def __setitem__(self, *args, **kwargs):
-        super().__setitem__(*args, **kwargs)
+    pass
 
 
 trace_dict = TraceDict([('안녕', 1)])

@@ -5,8 +5,6 @@
 # 3. 부모 클래스에 메서드가 추가되는 경우, 이 데코레이터가 추가 되지 않은 채 동작함.
 # 메타 클래스를 이용해 해결할 수 있음.
 
-
-
 from functools import wraps
 
 def trace_func(func):

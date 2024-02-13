@@ -53,3 +53,5 @@ try:
     trace_dict['존재하지 않음']
 except KeyError:
     pass
+
+print(dir(TraceDict))
