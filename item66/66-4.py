@@ -20,7 +20,6 @@ def log_level(level, name):
 
 with log_level(logging.DEBUG, 'my-log') as logger:
     logger.debug(f'대상: {logger.name}!')
-    logging.debug('이 메세지는 출력되지 않습니다.')
 
 logger = logging.getLogger('my-log')
 logger.debug('디버그 메세지는 출력되지 않습니다.')
