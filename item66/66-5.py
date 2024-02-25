@@ -12,7 +12,7 @@ finally:
     lock.release()
 
 
-# 컨텍스트 매니저를 사용하게 되면 위 단점이 모두 극복됨..
+# 컨텍스트 매니저를 사용하게 되면 위 단점이 모두 극복됨...
 import contextlib
 
 @contextlib.contextmanager
