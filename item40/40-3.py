@@ -26,4 +26,4 @@ for klass in ThisWay.mro():
     print(klass)
 # print(ThisWay.mro())
 print(f'(5 + 5) * 2 = 20이 나와야 하지만 실제로는 {foo.value}')
-#
+##
